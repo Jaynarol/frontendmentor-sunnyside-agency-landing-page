@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
 import Link from 'next/link'
 import { fontFraunces } from '@/styles/font'
 
@@ -9,11 +8,11 @@ const NavBar = () => (
     </Link>
     <nav>
       {/* eslint-disable-next-line tailwindcss/classnames-order */}
-      <div className="dropdown-end dropdown md:hidden">
-        <label tabIndex={0}>
+      <details className="dropdown-end dropdown md:hidden">
+        <summary className="list-none">
           <svg className="fill-white hover:fill-highlight-yellow" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fillRule="evenodd" /></svg>
-        </label>
-        <ul tabIndex={0} className="menu dropdown-content z-[1] mt-10 w-[calc(100vw-40px)] items-center gap-2 bg-white p-10 text-lg text-very-dark-grayish shadow">
+        </summary>
+        <ul className="menu dropdown-content z-[1] mt-10 w-[calc(100vw-40px)] items-center gap-2 bg-white p-10 text-lg text-very-dark-grayish shadow">
           <li className="absolute right-[-18px] top-[-30px] h-0 w-0 border-y-[25px] border-r-[30px] border-white border-y-transparent" />
           <li><Link href="./">About</Link></li>
           <li><Link href="./">Services</Link></li>
@@ -24,7 +23,7 @@ const NavBar = () => (
             </Link>
           </li>
         </ul>
-      </div>
+      </details>
 
       <ul className="menu menu-horizontal hidden items-baseline md:flex">
         <li><Link className="hover:underline" href="./">About</Link></li>
