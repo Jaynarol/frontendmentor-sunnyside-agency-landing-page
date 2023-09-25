@@ -3,13 +3,14 @@ import { FC } from 'react'
 import { fontFraunces } from '@/styles/font'
 
 type Props = {
-  title: string;
-  desc: string;
-  classColor: string;
+  title: string
+  desc: string
+  classColor: string
+  className?: string
 }
 
-const GridText: FC<Props> = ({ title, desc, classColor }) => (
-  <div className="space-y-6 px-5 py-14 text-center">
+const GridText: FC<Props> = ({ title, desc, classColor, className }) => (
+  <div className={`${className} flex flex-col justify-center gap-6 px-5 py-14 text-center md:px-20 md:text-left`}>
     <h3 className={`${fontFraunces.className} text-3xl font-black text-very-dark-desaturated`}>{title}</h3>
     <p className="text-dark-cyan">
       {desc}

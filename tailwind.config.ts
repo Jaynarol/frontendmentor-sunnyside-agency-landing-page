@@ -21,7 +21,7 @@ const config: Config = {
         'very-dark-desaturated': 'hsl(212, 27%, 19%)',
         'dark-grayish': 'hsl(213, 9%, 39%)',
         'very-dark-grayish': 'hsl(232, 10%, 55%)',
-        grayish: 'hsl(210, 4%, 67%)',
+        grayish: 'hsl(167, 44%, 70%)',
       },
     },
   },

@@ -23,25 +23,24 @@ const clients = [
 ]
 
 const Clients = () => (
-  <section className="py-12 text-center">
+  <section className="py-12  text-center md:py-20">
     <h2 className={`${fontFraunces.className} py-5 text-lg uppercase tracking-widest text-grayish`}>Client testimonials</h2>
-    {
+    <div className="flex flex-col justify-center md:flex-row md:px-20">
+      {
       clients.map(({ image, text, name, position }) => (
-        <div key={name}>
-          <div className="flex flex-col items-center space-y-10 px-5 py-10">
-            <Image className="rounded-full" width={74} height={74} src={image} alt="emily photo" />
-            <p className="text-lg text-dark-grayish">
-              {text}
-            </p>
-            <div>
-              <p className={`${fontFraunces.className} text-lg font-black`}>{name}</p>
-              <small className="font-normal text-grayish">{position}</small>
-            </div>
+        <div key={name} className="flex flex-col items-center space-y-10 px-5 py-10 md:max-w-xs">
+          <Image className="rounded-full md:scale-90" width={74} height={74} src={image} alt="emily photo" />
+          <p className="text-lg text-dark-grayish md:text-sm">
+            {text}
+          </p>
+          <div>
+            <p className={`${fontFraunces.className} text-lg font-black md:text-sm`}>{name}</p>
+            <small className="font-normal text-grayish md:text-xs">{position}</small>
           </div>
         </div>
       ))
     }
-
+    </div>
   </section>
 )
 

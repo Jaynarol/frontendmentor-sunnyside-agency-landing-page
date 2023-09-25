@@ -8,11 +8,11 @@ type Props = {
 }
 
 const GridTextWithBG: FC<Props> = ({ title, desc, className }) => (
-  <div className={`${className} flex min-h-[650px] flex-col justify-end space-y-8 bg-cover px-4 py-14 text-center `}>
-    <h3 className={`${fontFraunces.className} text-3xl font-black `}>
+  <div className={`${className} flex h-[650px] flex-col items-center justify-end gap-6 bg-cover bg-center px-4 py-14 text-center md:h-[40vw]`}>
+    <h3 className={`${fontFraunces.className} text-3xl font-black md:text-xl`}>
       {title}
     </h3>
-    <p>
+    <p className="max-w-xs md:text-sm">
       {desc}
     </p>
   </div>
