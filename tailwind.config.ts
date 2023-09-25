@@ -1,5 +1,4 @@
 import daisyui from 'daisyui'
-import daisyuiThemes from 'daisyui/src/theming/themes'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -8,33 +7,26 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  theme: {
+    extend: {
+      colors: {
+        'highlight-red': 'hsl(7, 99%, 70%)',
+        'highlight-yellow': 'hsl(51, 100%, 49%)',
+        'dark-desaturated': 'hsl(167, 40%, 24%)',
+        'dark-blue': 'hsl(198, 62%, 26%)',
+        'dark-cyan': 'hsl(168, 34%, 41%)',
+
+        'very-dark-desaturated': 'hsl(212, 27%, 19%)',
+        'dark-grayish': 'hsl(213, 9%, 39%)',
+        'very-dark-grayish': 'hsl(232, 10%, 55%)',
+        grayish: 'hsl(210, 4%, 67%)',
+      },
+    },
+  },
   plugins: [daisyui],
   daisyui: {
-    themes: [{
-      light: {
-        ...daisyuiThemes['[data-theme=valentine]'],
-        /*
-        primary: '', // dominant color.
-        secondary: '', // less dominant but still distinguishable.
-        accent: '', // draw attention, notifications, highlighted text
-        neutral: '', // shades of blacks, grays, and whites. don't convey a specific mood or emotion on their own.
-        'base-100': '', // base backgrounds color.
-        'base-content': '', // base content color.
-        */
-      },
-      dark: {
-        ...daisyuiThemes['[data-theme=dark]'],
-        /*
-        primary: '', // dominant color.
-        secondary: '', // less dominant but still distinguishable.
-        accent: '', // draw attention, notifications, highlighted text
-        neutral: '', // shades of blacks, grays, and whites. don't convey a specific mood or emotion on their own.
-        'base-100': '', // base backgrounds color.
-        'base-content': '', // base content color.
-        */
-      },
-    }],
-    darkTheme: 'dark',
+    themes: [],
+    darkTheme: '',
     logs: false,
   },
 }

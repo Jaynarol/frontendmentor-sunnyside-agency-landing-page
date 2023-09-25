@@ -1,6 +1,13 @@
+# Live Demo
+> https://jaynarol.github.io/frontendmentor-sunnyside-agency-landing-page/
+
+*challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef)*
+
+---
+
 # Frontend Mentor - Sunnyside agency landing page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Sunnyside agency landing page coding challenge](./challenge/design/desktop-preview.jpg)
 
 ## Welcome! 👋
 

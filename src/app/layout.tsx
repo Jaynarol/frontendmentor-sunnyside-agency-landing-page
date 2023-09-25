@@ -1,9 +1,7 @@
 import '@/styles/globals.css'
 import type { Metadata } from 'next'
-import { Itim } from 'next/font/google'
 import { FC, PropsWithChildren } from 'react'
-
-const font = Itim({ subsets: ['latin'], weight: ['400'] })
+import { fontBarlow } from '@/styles/font'
 
 export const metadata: Metadata = {
   title: 'Simple Next.js',
@@ -12,9 +10,9 @@ export const metadata: Metadata = {
 
 const RootLayout: FC<PropsWithChildren> = ({ children }) => (
   <html lang="en">
-    <body className={font.className}>
+    <div className={fontBarlow.className}>
       {children}
-    </body>
+    </div>
   </html>
 )
 
