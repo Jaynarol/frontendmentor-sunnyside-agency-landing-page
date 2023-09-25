@@ -7,7 +7,7 @@ import NavBar from '../components/NavBar'
 
 const Home = () => (
   <>
-    <header className="h-[550px] bg-[#3ebfff] bg-[url('/images/mobile/image-header.jpg')] bg-cover bg-bottom bg-no-repeat text-white md:h-[680px] md:bg-[url('/images/desktop/image-header.jpg')] md:bg-contain ">
+    <header className="h-[550px] bg-[#3ebfff] bg-mobileHeader bg-cover bg-bottom bg-no-repeat text-white md:h-[680px] md:bg-desktopHeader md:bg-contain ">
       <NavBar />
       <Hero />
     </header>

@@ -7,7 +7,7 @@ const Features = () => (
     <Image
       width={720}
       height={600}
-      src="/images/mobile/image-transform.jpg"
+      src="./images/mobile/image-transform.jpg"
       alt="transform"
       className="h-full w-full object-cover"
     />
@@ -20,7 +20,7 @@ const Features = () => (
     <Image
       width={750}
       height={624}
-      src="/images/mobile/image-stand-out.jpg"
+      src="./images/mobile/image-stand-out.jpg"
       alt="stand out"
       className="h-full w-full object-cover"
     />
@@ -32,12 +32,12 @@ const Features = () => (
     <GridTextWithBG
       title="Graphic design"
       desc="Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention."
-      className="bg-[url('/images/mobile/image-graphic-design.jpg')] text-dark-desaturated md:bg-[url('/images/desktop/image-graphic-design.jpg')]"
+      className="bg-mobileFeature1 text-dark-desaturated md:bg-desktopFeature1"
     />
     <GridTextWithBG
       title="Photography"
       desc="Increase your credibility by getting the most stunning, high-quality photos that improve your business image."
-      className="bg-[url('/images/mobile/image-photography.jpg')] text-dark-blue md:bg-[url('/images/desktop/image-photography.jpg')]"
+      className="bg-mobileFeature2 text-dark-blue md:bg-desktopFeature2"
     />
   </section>
 )
