@@ -12,7 +12,7 @@ const NavBar = () => (
         <summary className="list-none">
           <svg className="fill-white hover:fill-highlight-yellow" width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fillRule="evenodd" /></svg>
         </summary>
-        <ul className="menu dropdown-content z-[1] mt-10 w-[calc(100vw-40px)] items-center gap-2 bg-white p-10 text-lg text-very-dark-grayish shadow">
+        <ul className="menu dropdown-content z-[1] mt-10 w-[calc(100vw-60px)] items-center gap-2 bg-white p-10 text-lg text-very-dark-grayish shadow">
           <li className="absolute right-[-18px] top-[-30px] h-0 w-0 border-y-[25px] border-r-[30px] border-white border-y-transparent" />
           <li><Link href="./">About</Link></li>
           <li><Link href="./">Services</Link></li>

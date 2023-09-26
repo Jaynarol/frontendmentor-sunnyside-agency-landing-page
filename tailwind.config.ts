@@ -1,7 +1,8 @@
 import daisyui from 'daisyui'
 import type { Config } from 'tailwindcss'
 
-const REPO_PATH = 'frontendmentor-sunnyside-agency-landing-page'
+const REPO_PATH = '/frontendmentor-sunnyside-agency-landing-page'
+// const REPO_PATH = ''
 
 const config: Config = {
   content: [
@@ -12,12 +13,12 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        mobileHeader: `url('/${REPO_PATH}/images/mobile/image-header.jpg')`,
-        desktopHeader: `url('/${REPO_PATH}/images/desktop/image-header.jpg')`,
-        mobileFeature1: `url('/${REPO_PATH}/images/mobile/image-graphic-design.jpg')`,
-        desktopFeature1: `url('/${REPO_PATH}/images/desktop/image-graphic-design.jpg')`,
-        mobileFeature2: `url('/${REPO_PATH}/images/mobile/image-photography.jpg')`,
-        desktopFeature2: `url('/${REPO_PATH}/images/desktop/image-photography.jpg')`,
+        mobileHeader: `url('${REPO_PATH}/images/mobile/image-header.jpg')`,
+        desktopHeader: `url('${REPO_PATH}/images/desktop/image-header.jpg')`,
+        mobileFeature1: `url('${REPO_PATH}/images/mobile/image-graphic-design.jpg')`,
+        desktopFeature1: `url('${REPO_PATH}/images/desktop/image-graphic-design.jpg')`,
+        mobileFeature2: `url('${REPO_PATH}/images/mobile/image-photography.jpg')`,
+        desktopFeature2: `url('${REPO_PATH}/images/desktop/image-photography.jpg')`,
       },
       colors: {
         'highlight-red': 'hsl(7, 99%, 90%)',
